@@ -4,9 +4,15 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <title>Hello, AMPs</title>
     <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
-    <link rel="stylesheet" href="">
+    
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Tangerine"
+/>
+ 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -20,10 +26,160 @@
       }
     </script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  </head>
-  <body>
-    <h1>Welcome to the mobile web</h1>
+    <style amp-custom>
+      /* any custom style goes here */
+      body {
+        background-color: white;
+      }
+     
+      div#content_box1 {
+    background: #fff;
+}
+div#logo {
+    display: block;
+    text-align: center;
+    margin-top: 53px;
+}
 
-    <img src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="">
-  </body>
+div#logo_text {
+    font-size: 63px;
+    color: #ff9326;
+    font-family: 'Economica', sans-serif;
+}
+
+
+div#logo img {
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+div#logo amp-img{
+    border-radius: 50%;
+    border: 7px solid #ff751e;
+}
+div#serch form{
+    display: block;
+    text-align: center;
+}
+
+div#serch input {
+    width: 439px;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 7px;
+}
+
+div#serch button{
+    padding: 5px 11px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+div#serch amp-img{
+    margin-top: 2px;
+}
+
+div#main_contant {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+}
+div#content_box1 {
+    background: #fff;
+    text-align: center;
+    font-size: 10px;
+    width: 102px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+}
+div#main_contant a {
+    display: block;
+    margin: 0 auto;
+}
+div#content_box1 a {
+    font-size: 8px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+    </style>
+  </head>
+  <body style="background: url(https://picsum.photos/id/870/200/300?grayscale&blur=2) center center no-repeat; 
+  background-size: cover ; background-attachment: fixed;">
+
+  <!-- logo here section start -->
+   
+   <div id="logo">
+     <div id="img">
+      <amp-img src="./img/logo.png" alt="Welcome" height="200" width="200" ></amp-img>
+
+     </div>
+     <div id="logo_text">
+       RITS Browser
+     </div>
+      </div>
+      <!-- logo here section start -->
+
+      <!-- input button  -->
+      <div id="serch">
+      <form method="post"
+    action-xhr="https://example.com/subscribe"    target="_top">
+    
+      <label>
+          <input type="text"
+          name="serch"
+          required placeholder="Serch here">
+          <button type="submit"><amp-img src="img/serch.png"  height="20" width="20" /></amp-img></button> 
+      </label>
+     
+      
+    
+   </form>
+  </div>
+      <!-- input button end -->
+      <!-- main content start here  -->
+      <div id="main_contant">
+
+     
+        <div id="content_box1">
+          <a href="#">
+            <amp-img src="img/youtube.png" height="50" width="50"></amp-img>
+            <h2>Youtube</h2>
+          </a>
+        </div>
+        <div id="content_box1">
+          <a href="#">
+            <amp-img src="img/facebook.png" height="50" width="50"></amp-img>
+            <h2>Youtube</h2>
+          </a>
+        </div>
+        <div id="content_box1">
+          <a href="#">
+            <amp-img src="img/youtube.png" height="50" width="50"></amp-img>
+            <h2>Youtube</h2>
+          </a>
+        </div>
+        <div id="content_box1">
+          <a href="#">
+            <amp-img src="img/youtube.png" height="50" width="50"></amp-img>
+            <h2>Youtube</h2>
+          </a>
+        </div>
+        <div id="content_box1">
+          <a href="#">
+            <amp-img src="img/youtube.png" height="50" width="50"></amp-img>
+            <h2>Youtube</h2>
+          </a>
+        </div>
+      </div>
+      <!-- main content end here -->
+     </body>
 </html>
