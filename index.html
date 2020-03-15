@@ -1,20 +1,17 @@
-
 <!doctype html>
 <html amp lang="en">
-  <head>
-    <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
-    
-    <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Tangerine"
-/>
- 
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <script type="application/ld+json">
+
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <title>RITS Browser</title>
+  <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
@@ -25,224 +22,308 @@
         ]
       }
     </script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <style amp-custom>
-      /* any custom style goes here */
-      body {
-        background-color: white;
-      }
-     
-      div#content_box1 {
-    background: #fff;
-}
-div#logo {
-    display: block;
-    text-align: center;
-    margin-top: 53px;
-}
+  <style amp-boilerplate>
+     body {
+      background-color: white;
+    }
 
-div#logo_text {
-    font-size: 63px;
-    color: #ff9326;
-    font-family: 'Economica', sans-serif;
-}
+    div#content_box1 {
+      background: #fff;
+    }
 
+    div#logo {
+      display: block;
+      text-align: center;
+      margin-top: 53px;
+    }
+
+    div#logo_text {
+      font-size: 63px;
+      color: #ff9326;
+      font-family: 'Economica', sans-serif;
+    }
 
 
 
 
-div#serch form{
-    display: block;
-    text-align: center;
-}
 
-div#serch input {
-    width: 439px;
-    padding: 12px 17px;
-    border: none;
-    border-radius: 7px;
-}
+    div#serch form {
+      display: block;
+      text-align: center;
+      margin-bottom: 44px;
+    }
 
-div#serch button {
-    padding: 0px 9px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 22px;
-    margin-left: -45px;
-    background: #fff;
-}
-div#serch amp-img{
-    margin-top: 2px;
-}
+    div#serch input {
+      width: 439px;
+      padding: 12px 17px;
+      border: none;
+      border-radius: 7px;
+    }
 
-div#main_contant {
-    width: 750px;
-    margin: 0 auto;
-    margin-top: 43px;
-    display: flex;
-    justify-content: center;
-}
-div#content_box1 {
+    div#serch button {
+      padding: 0px 9px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 22px;
+      margin-left: -45px;
+      background: #fff;
+    }
+
+    div#serch amp-img {
+      margin-top: 2px;
+    }
+
+    div#main_contant {
+      width: 750px;
+      margin: 0 auto;
+      margin-top: 0px;
+      display: flex;
+      justify-content: center;
+    }
+
+    div#content_box1 {
     background: #fff;
     text-align: center;
     font-size: 10px;
-    width: 102px;
+    width: 90px;
     float: left;
     display: flex;
     justify-content: space-between;
     margin: 10px;
     border-radius: 10px;
 }
-div#main_contant a {
-    display: block;
+    div#main_contant a {
+      display: block;
+      margin: 0 auto;
+    }
+
+    div#content_box1 a {
+      font-size: 8px;
+      color: #333;
+      text-decoration: none;
+    }
+    div#all_news {
+    display: table;
     margin: 0 auto;
 }
-div#content_box1 a {
-    font-size: 8px;
-    color: #333;
-    text-decoration: none;
+div#corenavirus {
+    background: #fff;
+    text-align: center;
+    padding: 1px 0px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+div#nav {
+    background: #ff6c1c;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+div#nav li {
+    list-style: none;
+    display: flex;
+    justify-content: right;
 }
 
 
+div#nav li {
+    display: inline-flex;
+    padding: 11px 18px;
+}
+
+div#nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+div#news_deteles {
+    background: #fff;
+}
+div#main_contant h2 {
+    font-family: Arial;
+    font-weight: normal;
+    margin: 6px;
+}
 
 
-    </style>
-  </head>
-  <body style="background: url(https://picsum.photos/200/300?random=1) center center no-repeat; 
+  </style>
+</head>
+
+<body style="background: url(https://picsum.photos/200/300?random=1) center center no-repeat; 
   background-size: cover ; background-attachment: fixed; ">
 
   <!-- logo here section start -->
-   
-   <div id="logo">
-     <div id="img">
-      <amp-img src="./img/rits-logo.png" alt="Welcome" height="140" width="140" ></amp-img>
 
-     </div>
-     <div id="logo_text">
-   
-       <amp-img src="img/rits-sub-text.png" alt="Welcome" height="40" width="440" >
-     </div>
-      </div>
-      <!-- logo here section start -->
+  <div id="logo">
+    <div id="img">
+      <amp-img src="./img/rits-logo.png" alt="Welcome" height="140" width="140"></amp-img>
 
-      <!-- input button  -->
-      <div id="serch">
-      <form method="post"
-    action-xhr="https://example.com/subscribe"    target="_top">
-    
+    </div>
+    <div id="logo_text">
+
+      <amp-img src="img/rits-sub-text.png" alt="Welcome" height="40" width="440">
+    </div>
+  </div>
+  <!-- logo here section start -->
+
+  <!-- input button  -->
+  <div id="serch">
+    <form method="post" action-xhr="https://example.com/subscribe" target="_top">
+
       <label>
-          <input type="text"
-          name="serch"
-          required placeholder="Serch here">
-          <button type="submit"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none;  width:20px; height:20px;"><g class="style-scope yt-icon">
-            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"></path>
-          </g></svg></button> 
-  
+        <input type="text" name="serch" required placeholder="Serch here">
+        <button type="submit"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+            class="style-scope yt-icon" style="pointer-events: none;  width:20px; height:20px;">
+            <g class="style-scope yt-icon">
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                class="style-scope yt-icon"></path>
+            </g>
+          </svg></button>
+
       </label>
-     
-      
-    
-   </form>
 
-      <!-- input button end -->
-      <!-- main content start here  -->
-      <div id="main_contant">
 
-     
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/youtube.png" height="50" width="50"></amp-img>
-            <h2>Youtube</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/facebook.png" height="50" width="50"></amp-img>
-            <h2>Facebook</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/gmail.png" height="50" width="50"></amp-img>
-            <h2>Gmail</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/amazon.png" height="50" width="50"></amp-img>
-            <h2>Amazon</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/aliexpress.png" height="50" width="50"></amp-img>
-            <h2>Aliexpace</h2>
-          </a>
-        </div>
+
+    </form>
+
+    <!-- input button end -->
+    <!-- main content start here  -->
+    <div id="main_contant">
+
+
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/img_2.webp" height="40" width="50"></amp-img>
+          <h2>comparison</h2>
+        </a>
       </div>
-
-      <!-- main box 1 start  -->
-      <!-- main box 2 start  -->
-      <div id="main_contant">
-
-     
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/youtube.png" height="50" width="50"></amp-img>
-            <h2>Youtube</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/facebook.png" height="50" width="50"></amp-img>
-            <h2>Facebook</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/gmail.png" height="50" width="50"></amp-img>
-            <h2>Gmail</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/amazon.png" height="50" width="50"></amp-img>
-            <h2>Amazon</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/aliexpress.png" height="50" width="50"></amp-img>
-            <h2>Aliexpace</h2>
-          </a>
-        </div>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/facebook.png" height="40" width="50"></amp-img>
+          <h2>Facebook</h2>
+        </a>
       </div>
-      <div id="main_contant">
-
-        <!-- main box 2 end  -->
-        <!-- main box -3  -->
-     
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/youtube.png" height="50" width="50"></amp-img>
-            <h2>Youtube</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/facebook.png" height="50" width="50"></amp-img>
-            <h2>Facebook</h2>
-          </a>
-        </div>
-        <div id="content_box1">
-          <a href="#">
-            <amp-img src="img/gmail.png" height="50" width="50"></amp-img>
-            <h2>Gmail</h2>
-          </a>
-        </div>
-       
-    
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/gmail.png" height="40" width="50"></amp-img>
+          <h2>Gmail</h2>
+        </a>
       </div>
-      <!-- main content end here -->
-     </body>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/amazon.png" height="40" width="50"></amp-img>
+          <h2>Amazon</h2>
+        </a>
+      </div>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/aliexpress.png" height="40" width="50"></amp-img>
+          <h2>Aliexpace</h2>
+        </a>
+      </div>
+    </div>
+
+    <!-- main box 1 start  -->
+    <!-- main box 2 start  -->
+    <div id="main_contant">
+
+
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/youtube.png" height="40" width="50"></amp-img>
+          <h2>Youtube</h2>
+        </a>
+      </div>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/facebook.png" height="40" width="50"></amp-img>
+          <h2>Facebook</h2>
+        </a>
+      </div>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/gmail.png" height="40" width="50"></amp-img>
+          <h2>Gmail</h2>
+        </a>
+      </div>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/amazon.png" height="40" width="50"></amp-img>
+          <h2>Amazon</h2>
+        </a>
+      </div>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/aliexpress.png" height="40" width="50"></amp-img>
+          <h2>Aliexpace</h2>
+        </a>
+      </div>
+    </div>
+    <div id="main_contant">
+
+      <!-- main box 2 end  -->
+      <!-- main box -3  -->
+
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/youtube.png" height="40" width="50"></amp-img>
+          <h2>Youtube</h2>
+        </a>
+      </div>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/facebook.png" height="40" width="50"></amp-img>
+          <h2>Facebook</h2>
+        </a>
+      </div>
+      <div id="content_box1">
+        <a href="#">
+          <amp-img src="img/gmail.png" height="40" width="50"></amp-img>
+          <h2>Gmail</h2>
+        </a>
+      </div>
+     </div>
+    <!-- main content end here -->
+    <!-- news filed start  -->
+    <div id="all_news">
+
+  
+    <div id="live_cricket">
+      <a href="https://landing.ritsbrowser.com/rits_cricket.php">
+        <amp-img src="./img/rits-live-cricket.jpg" height="100" width="500"></amp-img>
+      </a>
+    </div>
+    <div id="live_cricket">
+      <a href="https://landing.ritsbrowser.com/rits_cricket.php">
+        <amp-img src="./img/rits-game-banner.jpg" height="100" width="500"></amp-img>
+      </a>
+    </div>
+    <div id="corenavirus">
+      <a href="https://landing.ritsbrowser.com/rits_cricket.php">
+        <amp-img src="./img/rits-coronavirus-bg.png" height="80" width="323px"></amp-img>
+        <p>Coronavirus disease (COVID-19) outbreak</p>
+      </a>
+    </div>
+    <div id="nav">
+      <li><a href="#">Technology </a></li>
+      <li><a href="#">Sports </a></li>
+      <li><a href="#">Headline </a></li>
+      <li><a href="#"> Jobs</a></li>
+      <li><a href="#">Politics</a></li>
+    </div>
+    <div id="news_deteles">
+      <div id="news_content">
+         <amp-img src="./img/rits-coronavirus-bg.png" height="50" width="50"></amp-img>
+      <h2>this is new headline</h2>
+      <span>www.newpaper.com</span>
+    </div>
+
+    </div>
+  </div>
+     <!-- news filed start  -->
+</body>
+
 </html>
